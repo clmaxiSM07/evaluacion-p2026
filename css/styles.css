@@ -1,0 +1,74 @@
+/* =====================================================
+   styles.css — TAWENO SUSHI
+   Completa los estilos según el mockup adjunto
+   ===================================================== */
+
+/* Reset base */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Tu código va aquí */
+body {
+  font-size: 1.6rem;
+}
+.navbar {
+  display:flex;
+  align-items: center;
+  background-color: #ffffffff;
+  padding: 1.6rem 1.6rem;
+  border-bottom: solid 0.1rem;
+  border-color: #e0ddd5;
+}
+.navbar-items{
+  display:flex;
+  list-style: none;
+  gap:2.8rem;
+}
+
+nav a{
+  display:flex;
+  text-decoration: none;
+  font-size: 1.4rem;
+  color:#555555
+}
+.logo-navbar{
+  display:flex;
+  font-size:1.6rem;
+  color:#1a1a1a;
+  font-weight: bold;
+}
+.hero{
+  padding: 6.4rem;
+  background-color: black;
+}
+.hero h1{
+  color:#ffffffff;
+  font-size: 4rem;
+}
+.hero span{
+  color:#c0392b;
+}
+.hero p{
+  color:#88888888;
+  font-size:1.6rem;
+  margin-bottom:2.8rem;
+}
+.btn-menu{
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #c0392b;
+  padding:1rem 2.4rem;
+  border-radius: 0.6rem;
+}
