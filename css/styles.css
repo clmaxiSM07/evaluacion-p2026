@@ -21,54 +21,336 @@ img {
 
 /* Tu código va aquí */
 body {
+  font-family: "Noto Serif JP", serif;
   font-size: 1.6rem;
-}
-.navbar {
-  display:flex;
-  align-items: center;
-  background-color: #ffffffff;
-  padding: 1.6rem 1.6rem;
-  border-bottom: solid 0.1rem;
-  border-color: #e0ddd5;
-}
-.navbar-items{
-  display:flex;
-  list-style: none;
-  gap:2.8rem;
+  color: #1a1a1a;
 }
 
-nav a{
-  display:flex;
-  text-decoration: none;
-  font-size: 1.4rem;
-  color:#555555
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-.logo-navbar{
-  display:flex;
-  font-size:1.6rem;
-  color:#1a1a1a;
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  margin: 0 0 2.8rem;
+  font-size: 2.6rem;
+  color: #1a1a1a;
+}
+
+.precio {
+  display: block;
+  font-size: 1.6rem;
   font-weight: bold;
+  color: #c0392b;
 }
-.hero{
-  padding: 6.4rem;
-  background-color: black;
+
+.container {
+  padding-left: 3.2rem;
+  padding-right: 3.2rem;
 }
-.hero h1{
-  color:#ffffffff;
+
+
+/* Sección Header */
+header {
+  background-color: #000000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+  background-color: #ffffff;
+  border-bottom: 0.1rem solid #e0ddd5;
+}
+
+.logo-navbar {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.navbar-items {
+  display: flex;
+  gap: 2.8rem;
+}
+
+.navbar-items a {
+  font-size: 1.4rem;
+  color: #555555;
+}
+
+.hero {
+  padding-top: 6.4rem;
+  padding-bottom: 6.4rem;
+}
+
+.hero h1 {
+  margin: 0;
   font-size: 4rem;
-}
-.hero span{
-  color:#c0392b;
-}
-.hero p{
-  color:#88888888;
-  font-size:1.6rem;
-  margin-bottom:2.8rem;
-}
-.btn-menu{
-  text-decoration: none;
   color: #ffffff;
-  background-color: #c0392b;
-  padding:1rem 2.4rem;
+}
+
+.hero h1 span {
+  color: #c0392b;
+}
+
+.hero p {
+  margin: 1.6rem 0 2.8rem;
+  font-size: 1.6rem;
+  color: #888888;
+}
+.btn-menu {
+  display: inline-block;
+  padding: 1rem 2.4rem;
   border-radius: 0.6rem;
+  background-color: #c0392b;
+  color: #ffffff;
+  font-size: 1.4rem;
+}
+
+
+/* Sección Menú */
+
+.menu {
+  padding-top: 4.8rem;
+  padding-bottom: 4.8rem;
+  background-color: #ffffff;
+}
+
+.menu-tarjetas {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tarjeta {
+  width: 32%;
+  border: 0.1rem solid #e0ddd5;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.tarjeta img {
+  display: block;
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.tarjeta-texto {
+  padding: 1.6rem;
+}
+
+.tarjeta h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.8rem;
+  color: #1a1a1a;
+}
+
+.tarjeta p {
+  margin: 0 0 1.4rem;
+  font-size: 1.4rem;
+  color: #555555;
+}
+
+
+/* Sección Pedidos */
+.pedidos {
+  display: flex;
+  gap: 4.8rem;
+  padding-top: 4.8rem;
+  padding-bottom: 4.8rem;
+  background-color: #f2f0eb;
+}
+
+.pedidos-texto {
+  width: 30%;
+}
+
+.pedidos-texto p {
+  font-size: 1.6rem;
+  color: #555555;
+}
+
+.pedidos-lista {
+  width: 65%;
+}
+
+.pedidos-lista li {
+  display: flex;
+  align-items: center;
+  padding: 1.2rem 0;
+  border-bottom: 0.1rem solid #e0ddd5;
+}
+
+.pedidos-lista img {
+  width: 6rem;
+  height: 6rem;
+  margin-right: 1.6rem;
+  border-radius: 0.8rem;
+  object-fit: cover;
+}
+
+.pedidos-lista .precio {
+  margin-left: auto; 
+}
+
+
+/* Sección Nosotros */
+.nosotros {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 4.8rem;
+  padding-bottom: 4.8rem;
+  background-color: #ffffff;
+}
+
+.nosotros-texto {
+  width: 45%;
+}
+
+.nosotros-texto p {
+  font-size: 1.6rem;
+  color: #555555;
+}
+
+.estadisticas {
+  display: flex;
+  width: 45%;
+  border: 0.1rem solid #e0ddd5;
+  border-radius: 1rem;
+}
+
+.estadistica {
+  flex: 1;
+  padding: 2.4rem 1.6rem;
+  text-align: center;
+}
+
+.estadistica-numero {
+  display: block;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.estadistica small {
+  font-size: 1.3rem;
+  color: #555555;
+}
+
+
+/* Sección Contacto */
+.contacto {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4.8rem;
+  padding-bottom: 4.8rem;
+  background-color: #f2f0eb;
+}
+
+.contacto-info {
+  width: 40%;
+}
+
+.contacto-info p,
+.contacto-info li {
+  font-size: 1.6rem;
+  color: #555555;
+}
+
+.contacto-info li {
+  margin-bottom: 1rem;
+}
+
+.form {
+  width: 50%;
+  padding: 2.4rem;
+  background-color: #ffffff;
+  border: 0.1rem solid #e0ddd5;
+  border-radius: 1rem;
+}
+
+.form label {
+  display: block; /* la etiqueta queda sobre su campo */
+  margin-bottom: 0.4rem;
+  font-size: 1.4rem;
+  color: #555555;
+}
+
+.form input,
+.form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 1.6rem;
+  padding: 1rem;
+  border: 0.1rem solid #e0ddd5;
+  border-radius: 0.6rem;
+}
+
+/* normalize.css da estilos a [type="submit"] (especificidad de clase),
+   por eso el botón se estiliza con una clase propia, escrita después */
+.btn-enviar {
+  display: block;
+  width: 100%;
+  padding: 1.2rem;
+  border-radius: 0.6rem;
+  background-color: #c0392b;
+  color: #ffffff;
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+footer {
+  padding-top: 3.6rem;
+  padding-bottom: 2rem;
+  background-color: #111111;
+}
+
+.footer-columnas {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-marca {
+  width: 40%;
+}
+
+footer h3 {
+  margin: 0 0 1.8rem;
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+footer h4 {
+  margin: 0 0 2.1rem;
+  font-size: 1.6rem;
+  color: #ffffff;
+}
+
+footer p,
+footer li {
+  font-size: 1.6rem;
+  color: #888888;
+}
+
+.footer-copyright {
+  margin-top: 3rem;
+  padding-top: 1.6rem;
+  border-top: 0.1rem solid #222222;
+}
+
+.footer-copyright p {
+  margin: 0 0 1.3rem;
+  font-size: 1.3rem;
+  text-align: center;
 }
